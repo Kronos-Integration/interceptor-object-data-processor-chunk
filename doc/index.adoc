@@ -1,0 +1,13 @@
+== Object chunk data processor
+This processor is for validating and checking data as it comes from data imports as file imports or database imports.
+This processor is for data imports where the whole content needs to be validated. For example it needs to be proofed
+that a key field only exists once in the deliverd data. Or where rows needs to be aggregated because the data
+contains 1..n relations.
+
+The config defines how the data is structured and what to do. The processor will ensure that the data is valid. All
+errors will be reported.
+
+
+=== Chunk definition overview
+
+include::./schema/chunk.adoc[]
