@@ -28,7 +28,7 @@
     "debug": false
   },
   "dependencies": {
-    "MD5": "^1.2.2",
+    "md5": "^1.2.2",
     "z-schema": "^3.9.1"
   },
   "devDependencies": {
