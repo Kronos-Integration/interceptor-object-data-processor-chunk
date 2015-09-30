@@ -1,0 +1,48 @@
+{
+  "name": "stream-object-data-processor-chunk",
+  "description": "Splits a line by a sparator into tokens.",
+  "main": "lib/data-processor-chunk.js",
+  "scripts": {
+    "cover": "node --harmony ./node_modules/istanbul-harmony/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports test",
+    "doc": "jsdoc lib/*.js",
+    "test": "mocha --harmony test/*_test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kronos-Integration/stream-object-data-processor-chunk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kronos-Integration/stream-object-data-processor-chunk/issues"
+  },
+  "homepage": "https://github.com/Kronos-Integration/stream-object-data-processor-chunk#readme",
+  "engines": {
+    "iojs": "2.0.0"
+  },
+  "keywords": [
+    "stream",
+    "line",
+    "parser"
+  ],
+  "release": {
+    "debug": false
+  },
+  "dependencies": {
+    "MD5": "^1.2.2",
+    "z-schema": "^3.9.1"
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "clone-deep": "^0.2.2",
+    "istanbul-harmony": "0.3.16",
+    "jsdoc": "^3.3.2",
+    "mocha": "^2.3.0",
+    "semantic-release": "^6.0.1",
+    "underscore": "^1.8.3"
+  },
+  "author": {
+    "name": "Torsten Link",
+    "email": "torstenlink@gmx.de"
+  },
+  "license": "BSD-2-Clause"
+}

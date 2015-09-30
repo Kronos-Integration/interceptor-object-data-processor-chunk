@@ -1,0 +1,28 @@
+{
+	"values": [{
+		"first": "Foo",
+		"last": "bar",
+		"street": "one way street",
+		"friends": "herbert"
+	}, {
+		"first": "Herbert",
+		"last": "Batz",
+		"street": "one way street",
+		"friends": "joe"
+	}, {
+		"first": "Kuni",
+		"last": "Bert",
+		"street": "second way street",
+		"friends": "ali"
+	}, {
+		"first": "Kuni",
+		"last": "Bert",
+		"street": "second way street",
+		"friends": "Herbert"
+	}, {
+		"first": "Franz",
+		"last": "Kanz",
+		"street": "second way street",
+		"friends": "Foo"
+	}]
+}

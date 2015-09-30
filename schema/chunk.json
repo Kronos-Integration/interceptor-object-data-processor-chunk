@@ -1,0 +1,64 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "The import description.",
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["keyFields", "keyHashName"],
+	"properties": {
+
+		"keyHashFields": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "string"
+			},
+			"uniqueItems": true
+		},
+		"keyHashName": {
+			"type": "string"
+		},
+
+		"contentHashFields": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "string"
+			},
+			"uniqueItems": true
+		},
+		"contentHashName": {
+			"type": "string"
+		},
+
+		"scopeHashFields": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "string"
+			},
+			"uniqueItems": true
+		},
+		"scopeHashName": {
+			"type": "string"
+		},
+
+		"multiRowFields": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"uniqueItems": true
+		},
+
+		"checks": {
+			"double_rows_same": {
+				"$ref": "#severity"
+			},
+			"double_rows_different": {
+				"$ref": "#severity"
+			}
+
+		}
+
+	}
+}

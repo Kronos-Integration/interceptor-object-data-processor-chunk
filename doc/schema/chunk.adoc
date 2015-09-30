@@ -1,0 +1,32 @@
+== Chunk definition
+Defines how to handle the chunk of data
+
+[source,json]
+-----
+include::../../schema/chunk.json[]
+-----
+
+
+keyHashFields::
+	These fields define the key of an record. This is the identity. All records with the same key have the same identity.
+	All the values of these fields will be taken to create a hash. This is then also the unique key for this record.
+
+keyHashName::
+	A name used to store the generated key hash in the record.
+
+contentKeyFields::
+	All the fields used to define the content of a record. This hash is used to check if the content of a record hash changed.
+	The record may contain more fields a you interested in.
+
+contentKeyHashName::
+	A name used to store the generated content hash in the record.
+
+scopeHashFields::
+	All these fields may define a grouping in the records. For example the severity 'abort_scope' uses this scope
+	to abort only records from this scope while importing.
+
+scopeHashName::
+	A name used to store the generated scope hash in the record.
+
+multiRowFields::
+ 	Defines all fields which will be grouped to an array of data if there are records with multiple keys.
