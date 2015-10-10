@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "chai": "3.2.0",
-    "clone-deep": "0.2.2",
+    "clone-deep": "0.2.3",
     "istanbul-harmony": "0.3.16",
     "jsdoc": "3.3.3",
     "mocha": "2.3.3",
