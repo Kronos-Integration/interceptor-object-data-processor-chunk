@@ -14,7 +14,7 @@ const chunkProcessor = require('../lib/data-processor-chunk.js');
 const objData = require('./fixtures/data.json');
 
 const chunkDefinitionGroupFrinds = {
-	"keyFields": ["first", "last"],
+	"keyHashFields": ["first", "last"],
 	"keyHashName": "__key",
 	"contentHashFields": ["first", "last", "friends"],
 	"contentHashName": "__content",
@@ -24,7 +24,7 @@ const chunkDefinitionGroupFrinds = {
 };
 
 const chunkDefinitionNoGroup = {
-	"keyFields": ["first", "last"],
+	"keyHashFields": ["first", "last"],
 	"keyHashName": "__key",
 	"contentHashFields": ["friends", "street"],
 	"contentHashName": "__content"

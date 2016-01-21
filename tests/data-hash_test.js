@@ -15,7 +15,7 @@ const distinctData = require('./fixtures/distinct_data.json');
 
 
 const chunkDefinition = {
-	"keyFields": ["first", "last"],
+	"keyHashFields": ["first", "last"],
 	"keyHashName": "__key",
 	"contentHashFields": ["first", "last", "friends"],
 	"contentHashName": "__content",
@@ -25,7 +25,7 @@ const chunkDefinition = {
 };
 
 const chunkDefinition_without_scope = {
-	"keyFields": ["first", "last"],
+	"keyHashFields": ["first", "last"],
 	"keyHashName": "__key",
 	"contentHashFields": ["first", "last", "friends"],
 	"contentHashName": "__content",
@@ -33,7 +33,7 @@ const chunkDefinition_without_scope = {
 };
 
 const chunkDefinition_keyOnly = {
-	"keyFields": ["first", "last"],
+	"keyHashFields": ["first", "last"],
 	"keyHashName": "__key"
 };
 
@@ -74,7 +74,7 @@ describe("data-processor-chunk:data-hash - Errors", function () {
 		let error;
 		try {
 			dataHashFactory({
-				"keyFields": ["first", "last"],
+				"keyHashFields": ["first", "last"],
 				"keyHashName": "__key",
 				"contentHashFields": ["last"]
 			});
@@ -90,7 +90,7 @@ describe("data-processor-chunk:data-hash - Errors", function () {
 		let error;
 		try {
 			dataHashFactory({
-				"keyFields": ["first", "last"],
+				"keyHashFields": ["first", "last"],
 				"keyHashName": "__key",
 				"scopeHashFields": ["last"]
 			});

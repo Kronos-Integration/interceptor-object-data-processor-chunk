@@ -1,0 +1,74 @@
+/* global describe, it, xit */
+/* jslint node: true, esnext: true */
+
+"use strict";
+
+/*
+ * Just test if the message will be passed through the interceptor
+ */
+
+const chai = require('chai'),
+  assert = chai.assert,
+  expect = chai.expect,
+  should = chai.should(),
+  InterceptorUnderTest = require('../index').Interceptor,
+  MockReceiveInterceptor = require('kronos-test-interceptor').MockReceiveInterceptor;
+
+
+const stepMock = {
+  "name": "dummy step name",
+  "type": "dummy step type"
+};
+
+const checkProperties = {
+  "keyHashFields": ["first", "last"],
+  "keyHashName": "__key",
+  "contentHashFields": ["first", "last", "friends"],
+  "contentHashName": "__content",
+  "scopeHashFields": ["street"],
+  "scopeHashName": "__scope",
+  "multiRowFields": ["friends"]
+};
+
+
+describe('Interceptor test', function () {
+
+  it('Create', function () {
+    const endpoint = {
+      "owner": stepMock,
+      "name": "gumboIn"
+    };
+    const messageHandler = new InterceptorUnderTest(endpoint, checkProperties);
+    assert.ok(messageHandler);
+  });
+
+  it('Send message', function (done) {
+    const endpoint = {
+      "owner": stepMock,
+      "name": "gumboIn"
+    };
+
+    const sendMessage = {
+      "info": "first message"
+    };
+
+    const messageHandler = new InterceptorUnderTest(endpoint, checkProperties);
+    const mockReceive = new MockReceiveInterceptor(function (request, oldRequest) {
+
+      assert.ok(request);
+
+      assert.deepEqual(request, {
+        "info": "first message"
+      });
+      done();
+    });
+
+    messageHandler.connected = mockReceive;
+
+    messageHandler.receive(sendMessage);
+
+  });
+
+
+
+});

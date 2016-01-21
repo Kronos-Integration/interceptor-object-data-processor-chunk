@@ -3,7 +3,13 @@
 	"description": "The import description.",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["keyFields", "keyHashName"],
+	"required": ["keyHashFields", "keyHashName"],
+	"definitions": {
+		"severity": {
+			"type": "string",
+			"enum": ["abort_file", "abort_scope", "skip_record", "skip_field"]
+		}
+	},
 	"properties": {
 
 		"keyHashFields": {
@@ -52,10 +58,10 @@
 
 		"checks": {
 			"double_rows_same": {
-				"$ref": "#severity"
+				"$ref": "#/definitions/severity"
 			},
 			"double_rows_different": {
-				"$ref": "#severity"
+				"$ref": "#/definitions/severity"
 			}
 
 		}
