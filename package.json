@@ -2,7 +2,7 @@
   "name": "kronos-interceptor-object-data-processor-chunk",
   "version": "0.0.0",
   "description": "Splits a line by a sparator into tokens.",
-  "main": "lib/data-processor-chunk.js",
+  "main": "index.js",
   "scripts": {
     "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests",
     "doc": "jsdoc lib/*.js",
