@@ -8,7 +8,7 @@ const expect = chai.expect;
 const should = chai.should();
 
 const cloneDeep = require('clone-deep');
-const mockReadStream = require('./mockReadStream');
+const mockReadStream = require('kronos-test-interceptor').mockReadStreamFactory;
 const chunkProcessor = require('../lib/data-processor-chunk.js');
 
 const objData = require('./fixtures/data.json');
