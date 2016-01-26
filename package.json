@@ -31,17 +31,20 @@
     "istanbul": "^0.4.2",
     "jsdoc": "3.4.0",
     "kronos-test-interceptor": "^1.7.0",
-    "mocha": "2.3.4",
+    "mocha": "2.4.1",
     "semantic-release": "4.3.5",
     "underscore": "1.8.3"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=4.2.1"
