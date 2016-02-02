@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "md5": " 2.0.0",
-    "kronos-interceptor": "^1.4.0",
+    "kronos-interceptor": "^2.0.1",
     "z-schema": "3.16.1"
   },
   "devDependencies": {
