@@ -17,9 +17,6 @@
     "url": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk/issues"
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk#readme",
-  "release": {
-    "debug": false
-  },
   "dependencies": {
     "md5": " 2.0.0",
     "kronos-interceptor": "^1.4.0",
