@@ -5,6 +5,4 @@ const Interceptor = require('./lib/interceptor').Interceptor;
 
 exports.Interceptor = Interceptor;
 
-exports.registerWithManager = function (manager) {
-	manager.registerInterceptor(Interceptor);
-};
+exports.registerWithManager = manager => manager.registerInterceptor(Interceptor);

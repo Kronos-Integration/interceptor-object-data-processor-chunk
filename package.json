@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk#readme",
   "dependencies": {
     "md5": " 2.0.0",
-    "kronos-interceptor": "^1.4.0",
+    "kronos-interceptor": "2.0.1",
     "z-schema": "3.16.1"
   },
   "devDependencies": {
@@ -27,21 +27,18 @@
     "clone-deep": "0.2.4",
     "istanbul": "0.4.2",
     "jsdoc": "3.4.0",
-    "kronos-test-interceptor": "^1.7.0",
+    "kronos-test-interceptor": "2.0.2",
     "mocha": "2.4.5",
     "semantic-release": "6.2.0",
     "underscore": "1.8.3"
   },
-  "contributors": [
-    {
-      "name": "Torsten Link",
-      "email": "torstenlink@gmx.de"
-    },
-    {
-      "name": "Markus Felten",
-      "email": "markus.felten@gmx.de"
-    }
-  ],
+  "contributors": [{
+    "name": "Torsten Link",
+    "email": "torstenlink@gmx.de"
+  }, {
+    "name": "Markus Felten",
+    "email": "markus.felten@gmx.de"
+  }],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=5"
