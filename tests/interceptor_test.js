@@ -21,13 +21,15 @@ const stepMock = {
 };
 
 const checkProperties = {
-  "keyHashFields": ["first", "last"],
-  "keyHashName": "__key",
-  "contentHashFields": ["first", "last", "friends"],
-  "contentHashName": "__content",
-  "scopeHashFields": ["street"],
-  "scopeHashName": "__scope",
-  "multiRowFields": ["friends"]
+  "config": {
+    "keyHashFields": ["first", "last"],
+    "keyHashName": "__key",
+    "contentHashFields": ["first", "last", "friends"],
+    "contentHashName": "__content",
+    "scopeHashFields": ["street"],
+    "scopeHashName": "__scope",
+    "multiRowFields": ["friends"]
+  }
 };
 
 

@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"description": "The import description.",
+	"description": "The chunk processor description.",
 	"type": "object",
 	"additionalProperties": false,
 	"required": ["keyHashFields", "keyHashName"],
