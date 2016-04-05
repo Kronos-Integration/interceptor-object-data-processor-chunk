@@ -20,7 +20,7 @@
   "dependencies": {
     "md5": "2.1.0",
     "kronos-interceptor": "2.1.0",
-    "z-schema": "3.16.1"
+    "z-schema": "3.17.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
