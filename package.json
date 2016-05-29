@@ -25,13 +25,13 @@
   "devDependencies": {
     "chai": "3.5.0",
     "clone-deep": "0.2.4",
+    "cz-conventional-changelog": "1.1.6",
     "istanbul": "0.4.3",
     "jsdoc": "3.4.0",
     "kronos-test-interceptor": "2.0.4",
     "mocha": "2.5.3",
-    "semantic-release": "6.2.1",
-    "underscore": "1.8.3",
-    "cz-conventional-changelog": "1.1.6"
+    "semantic-release": "6.3.0",
+    "underscore": "1.8.3"
   },
   "contributors": [
     {
