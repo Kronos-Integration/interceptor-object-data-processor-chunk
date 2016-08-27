@@ -1,5 +1,5 @@
 /* jslint node: true, esnext: true */
-"use strict";
+'use strict';
 
 const Interceptor = require('./lib/interceptor').Interceptor;
 
