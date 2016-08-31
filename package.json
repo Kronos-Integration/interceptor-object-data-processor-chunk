@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk#readme",
   "dependencies": {
     "kronos-interceptor": "^2.2.2",
-    "md5": "2.2.0",
+    "md5": "2.2.1",
     "z-schema": "3.17.0"
   },
   "devDependencies": {
