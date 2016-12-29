@@ -11,13 +11,15 @@ const ZSchema = require('z-schema');
 const validator = new ZSchema({});
 const schema = require('../schema/chunk.json');
 
-const hashFactory = require('./data-hash');
-
 const ERR_DOUBLE_KEY = 'DOUBLE_KEY';
 const ERR_DOUBLE_KEY_SAME = 'DOUBLE_KEY_SAME_DATA';
 const ERR_DOUBLE_KEY_DIFF = 'DOUBLE_KEY_DIFFERENT_DATA';
 
-
+import {
+	createFunctions,
+	createHashFunction
+}
+from './data-hash';
 
 // The name used to store the has for the content without the
 // multi row fields
@@ -65,7 +67,7 @@ class DataProcessorChunk extends stream.Transform {
 		}
 
 		// Stores all the checks/action to be executed
-		this.rowActions = hashFactory.createFunctions(opts);
+		this.rowActions = createFunctions(opts);
 
 		// if there are multirows we need a second content hash without the multi row fields
 		if (this.multiRowFields && opts.contentHashFields !== undefined) {
@@ -333,13 +335,17 @@ function createTmpHashAction(contentHashFields, multiRowFields) {
 	// now we have a new array
 	if (fieldClash) {
 		// only in this case we need a separate hash
-		return hashFactory.createHashFunction(tmpHashFields, TMP_HASH_FIELD_NAME);
+		return createHashFunction(tmpHashFields, TMP_HASH_FIELD_NAME);
 	} else {
 		// In this case we could use the normal content hash as the muti row fields where not included
 		return;
 	}
 }
 
-module.exports = function (opts, validate) {
+function DataProcessorChunkFactory(opts, validate) {
 	return new DataProcessorChunk(opts, validate);
+}
+
+export {
+	DataProcessorChunkFactory
 };
