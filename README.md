@@ -20,12 +20,75 @@ kronos-interceptor-object-data-processor-chunk
 Splits a line by a sparator into tokens
 
 # API Reference
-{{#modules~}}
-- {{name}}
-{{/modules}}
 
-{{#functions}}* {{>docs}}
-{{/functions}}
+* <a name="createFunctions"></a>
+
+## createFunctions(chunkDefinition)
+Creates the checks for checking boolean values
+
+**Kind**: global function  
+
+| Param | Description |
+| --- | --- |
+| chunkDefinition | The chunk definition for these records. |
+
+
+* <a name="createHashFunction"></a>
+
+## createHashFunction(hashFields, hashName)
+Creates a function which generates a hash from the given content and stores the generated Hash under the given name in the record
+
+**Kind**: global function  
+
+| Param | Description |
+| --- | --- |
+| hashFields | All the field names used to create the hash |
+| hashName | The name to be used to store the hash value back in the record |
+
+
+* <a name="addError"></a>
+
+## addError(data, error)
+Adds an error to the stream data
+
+**Kind**: global function  
+
+| Param | Description |
+| --- | --- |
+| data | The current stream data |
+| error | The error to be added. |
+
+
+* <a name="createTmpHashAction"></a>
+
+## createTmpHashAction()
+Creates a hash function to compute a content hash without the multirow fields
+
+**Kind**: global function  
+
+* <a name="DataProcessorChunk+addRowActions"></a>
+
+## dataProcessorChunk.addRowActions()
+Add custom actions to the rowActions.
+These actions will be executed per row
+
+**Kind**: instance method of <code>[DataProcessorChunk](#DataProcessorChunk)</code>  
+
+* <a name="DataProcessorChunk+_transform"></a>
+
+## dataProcessorChunk._transform()
+Reads the stream data and split it into lines.
+
+**Kind**: instance method of <code>[DataProcessorChunk](#DataProcessorChunk)</code>  
+
+* <a name="DataProcessorChunk+_flush"></a>
+
+## dataProcessorChunk._flush()
+Flushes the data.
+Only needed if there are multi row fields used
+
+**Kind**: instance method of <code>[DataProcessorChunk](#DataProcessorChunk)</code>  
+
 * * *
 
 install

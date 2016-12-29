@@ -9,9 +9,8 @@ const should = chai.should();
 
 const cloneDeep = require('clone-deep');
 const mockReadStream = require('kronos-test-interceptor').mockReadStreamFactory;
-const chunkProcessor = require('../lib/data-processor-chunk.js');
-
 const objData = require('./fixtures/data.json');
+const chunkProcessor = require('../dist/module').DataProcessorChunkFactory;
 
 const chunkDefinitionGroupFrinds = {
 	"keyHashFields": ["first", "last"],

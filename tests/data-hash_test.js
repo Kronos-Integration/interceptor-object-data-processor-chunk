@@ -9,7 +9,7 @@ const should = chai.should();
 
 const _ = require('underscore');
 
-const dataHashFactory = require('../lib/data-hash').createFunctions;
+const dataHashFactory = require('../dist/module').createFunctions;
 
 const distinctData = require('./fixtures/distinct_data.json');
 
