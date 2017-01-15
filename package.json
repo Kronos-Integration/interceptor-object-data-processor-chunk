@@ -5,13 +5,14 @@
   "module": "src/module.js",
   "main": "dist/module.js",
   "scripts": {
-    "cover": "npm run prepublish && istanbul cover node_modules/.bin/_mocha -- -u exports tests/*_test.js",
+    "cover": "nyc npm test",
     "test": "mocha tests/*_test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
     "prepublish": "rollup --output=dist/module.js -c -- src/module.js",
     "pretest": "npm run prepublish",
-    "posttest": "markdown-doctest"
+    "posttest": "markdown-doctest",
+    "precover": "npm run prepublish"
   },
   "repository": {
     "type": "git",
@@ -30,14 +31,14 @@
     "chai": "^3.5.0",
     "clone-deep": "0.2.4",
     "cz-conventional-changelog": "^1.2.0",
-    "istanbul": "^0.4.5",
     "kronos-test-interceptor": "2.1.0",
     "mocha": "^3.2.0",
-    "semantic-release": "^6.3.5",
+    "semantic-release": "^6.3.6",
     "underscore": "1.8.3",
     "jsdoc-to-markdown": "^2.0.1",
     "markdown-doctest": "^0.9.1",
-    "rollup": "^0.41.4"
+    "rollup": "^0.41.4",
+    "nyc": "^10.0.0"
   },
   "contributors": [
     {
@@ -51,7 +52,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.9.3"
+    "node": ">=6.9.4"
   },
   "keywords": [
     "stream",
@@ -63,5 +64,14 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "nyc": {
+    "include": [
+      "dist/**/*.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
+    "report-dir": "./coverage"
   }
 }
