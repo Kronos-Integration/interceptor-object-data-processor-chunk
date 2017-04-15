@@ -52,7 +52,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.9.4"
+    "node": ">=7.9.0"
   },
   "keywords": [
     "stream",
@@ -73,5 +73,10 @@
       "lcov"
     ],
     "report-dir": "./coverage"
+  },
+  "template": {
+    "repository": {
+      "url": "https://github.com/Kronos-Tools/npm-package-template.git"
+    }
   }
 }
