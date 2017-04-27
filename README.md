@@ -1,5 +1,5 @@
 [![npm](https://img.shields.io/npm/v/kronos-interceptor-object-data-processor-chunk.svg)](https://www.npmjs.com/package/kronos-interceptor-object-data-processor-chunk)
-[![Greenkeeper](https://badges.greenkeeper.io/Kronos-Integration/kronos-interceptor-object-data-processor-chunk)](https://greenkeeper.io/)
+[![Greenkeeper](https://badges.greenkeeper.io/Kronos-Integration/kronos-interceptor-object-data-processor-chunk.svg)](https://greenkeeper.io/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk)
 [![Build Status](https://secure.travis-ci.org/Kronos-Integration/kronos-interceptor-object-data-processor-chunk.png)](http://travis-ci.org/Kronos-Integration/kronos-interceptor-object-data-processor-chunk)
 [![bithound](https://www.bithound.io/github/Kronos-Integration/kronos-interceptor-object-data-processor-chunk/badges/score.svg)](https://www.bithound.io/github/Kronos-Integration/kronos-interceptor-object-data-processor-chunk)
@@ -72,14 +72,14 @@ Creates a hash function to compute a content hash without the multirow fields
 Add custom actions to the rowActions.
 These actions will be executed per row
 
-**Kind**: instance method of <code>[DataProcessorChunk](#DataProcessorChunk)</code>  
+**Kind**: instance method of [<code>DataProcessorChunk</code>](#DataProcessorChunk)  
 
 * <a name="DataProcessorChunk+_transform"></a>
 
 ## dataProcessorChunk._transform()
 Reads the stream data and split it into lines.
 
-**Kind**: instance method of <code>[DataProcessorChunk](#DataProcessorChunk)</code>  
+**Kind**: instance method of [<code>DataProcessorChunk</code>](#DataProcessorChunk)  
 
 * <a name="DataProcessorChunk+_flush"></a>
 
@@ -87,7 +87,7 @@ Reads the stream data and split it into lines.
 Flushes the data.
 Only needed if there are multi row fields used
 
-**Kind**: instance method of <code>[DataProcessorChunk](#DataProcessorChunk)</code>  
+**Kind**: instance method of [<code>DataProcessorChunk</code>](#DataProcessorChunk)  
 
 * * *
 
