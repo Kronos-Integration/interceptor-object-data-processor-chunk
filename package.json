@@ -28,7 +28,7 @@
     "z-schema": "3.18.2"
   },
   "devDependencies": {
-    "chai": "^4.0.1",
+    "chai": "^4.0.2",
     "clone-deep": "0.3.0",
     "cz-conventional-changelog": "^2.0.0",
     "kronos-test-interceptor": "2.1.0",
@@ -37,7 +37,7 @@
     "underscore": "1.8.3",
     "jsdoc-to-markdown": "^3.0.0",
     "markdown-doctest": "^0.9.1",
-    "rollup": "^0.41.6",
+    "rollup": "^0.42.0",
     "nyc": "^11.0.2"
   },
   "contributors": [
