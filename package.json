@@ -31,7 +31,7 @@
     "chai": "^4.1.2",
     "clone-deep": "1.0.0",
     "kronos-test-interceptor": "2.1.0",
-    "mocha": "^3.5.0",
+    "mocha": "^3.5.1",
     "semantic-release": "^8.0.0",
     "underscore": "1.8.3",
     "jsdoc-to-markdown": "^3.0.0",
