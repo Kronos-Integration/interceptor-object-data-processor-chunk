@@ -36,7 +36,7 @@
     "underscore": "1.8.3",
     "jsdoc-to-markdown": "^3.0.1",
     "markdown-doctest": "^0.9.1",
-    "rollup": "^0.50.0",
+    "rollup": "^0.51.0",
     "nyc": "^11.3.0"
   },
   "contributors": [
