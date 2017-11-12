@@ -32,11 +32,11 @@
     "clone-deep": "1.0.0",
     "kronos-test-interceptor": "2.1.0",
     "mocha": "^4.0.1",
-    "semantic-release": "^9.1.0",
+    "semantic-release": "^9.1.1",
     "underscore": "1.8.3",
     "jsdoc-to-markdown": "^3.0.1",
     "markdown-doctest": "^0.9.1",
-    "rollup": "^0.51.3",
+    "rollup": "^0.51.5",
     "nyc": "^11.3.0"
   },
   "contributors": [
