@@ -1,9 +1,26 @@
 {
   "name": "kronos-interceptor-object-data-processor-chunk",
   "version": "0.0.0-semantic-release",
-  "description": "Splits a line by a sparator into tokens.",
-  "module": "src/module.js",
   "main": "dist/module.js",
+  "module": "src/module.js",
+  "description": "Splits a line by a sparator into tokens.",
+  "keywords": [
+    "stream",
+    "line",
+    "parser",
+    "kronos-interceptor"
+  ],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
   "scripts": {
     "cover": "nyc --temp-directory build/nyc npm test",
     "test": "mocha tests/*-test.js",
@@ -14,14 +31,6 @@
     "precover": "rollup -c",
     "prepare": "rollup -c"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk/issues"
-  },
-  "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk#readme",
   "dependencies": {
     "kronos-interceptor": "^2.5.2",
     "md5": "2.2.1",
@@ -39,26 +48,17 @@
     "rollup": "^0.53.0",
     "nyc": "^11.4.1"
   },
-  "contributors": [
-    {
-      "name": "Torsten Link",
-      "email": "torstenlink@gmx.de"
-    },
-    {
-      "name": "Markus Felten",
-      "email": "markus.felten@gmx.de"
-    }
-  ],
-  "license": "BSD-2-Clause",
   "engines": {
     "node": ">=8.9.3"
   },
-  "keywords": [
-    "stream",
-    "line",
-    "parser",
-    "kronos-interceptor"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk/issues"
+  },
+  "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk#readme",
   "nyc": {
     "include": [
       "dist/**/*.js"
@@ -68,12 +68,12 @@
     ],
     "report-dir": "./coverage"
   },
+  "xo": {
+    "space": true
+  },
   "template": {
     "repository": {
       "url": "https://github.com/Kronos-Tools/npm-package-template.git"
     }
-  },
-  "xo": {
-    "space": true
   }
 }
