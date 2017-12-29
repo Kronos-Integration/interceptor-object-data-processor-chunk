@@ -40,7 +40,7 @@
     "chai": "^4.1.2",
     "clone-deep": "2.0.0",
     "kronos-test-interceptor": "3.1.1",
-    "mocha": "^4.0.1",
+    "mocha": "^4.1.0",
     "semantic-release": "^11.1.0",
     "underscore": "1.8.3",
     "jsdoc-to-markdown": "^3.0.3",
