@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "clone-deep": "2.0.0",
+    "clone-deep": "3.0.0",
     "kronos-test-interceptor": "3.1.1",
     "mocha": "^5.0.0",
     "semantic-release": "^12.2.3",
