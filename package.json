@@ -42,7 +42,7 @@
     "kronos-test-interceptor": "3.1.1",
     "mocha": "^5.1.0",
     "semantic-release": "^15.1.7",
-    "underscore": "1.8.3",
+    "underscore": "1.9.0",
     "jsdoc-to-markdown": "^4.0.1",
     "markdown-doctest": "^0.9.1",
     "rollup": "^0.58.0",
