@@ -40,12 +40,12 @@
     "chai": "^4.1.2",
     "clone-deep": "4.0.0",
     "kronos-test-interceptor": "3.1.1",
-    "mocha": "^5.1.0",
+    "mocha": "^5.1.1",
     "semantic-release": "^15.1.7",
     "underscore": "1.9.0",
     "jsdoc-to-markdown": "^4.0.1",
     "markdown-doctest": "^0.9.1",
-    "rollup": "^0.58.0",
+    "rollup": "^0.58.1",
     "nyc": "^11.7.1"
   },
   "engines": {
