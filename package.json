@@ -46,7 +46,7 @@
     "jsdoc-to-markdown": "^4.0.1",
     "markdown-doctest": "^0.9.1",
     "rollup": "^0.59.4",
-    "nyc": "^11.8.0"
+    "nyc": "^12.0.1"
   },
   "engines": {
     "node": ">=8.11"
