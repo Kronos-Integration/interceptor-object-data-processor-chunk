@@ -7,6 +7,7 @@ export default {
 
   output: {
     format: 'cjs',
-    file: pkg.main
+    file: pkg.main,
+    interop: false
   }
 };
