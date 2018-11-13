@@ -41,7 +41,7 @@
     "clone-deep": "4.0.0",
     "kronos-test-interceptor": "3.1.1",
     "mocha": "^5.2.0",
-    "semantic-release": "^15.10.8",
+    "semantic-release": "^15.11.0",
     "underscore": "1.9.1",
     "jsdoc-to-markdown": "^4.0.1",
     "markdown-doctest": "^0.9.1",
