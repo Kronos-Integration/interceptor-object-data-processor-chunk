@@ -23,13 +23,13 @@
   "license": "BSD-2-Clause",
   "scripts": {
     "cover": "nyc --temp-directory build/nyc npm test",
-    "test": "mocha tests/*-test.js",
-    "semantic-release": "semantic-release",
     "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
-    "pretest": "rollup -c",
     "posttest": "markdown-doctest",
     "precover": "rollup -c",
-    "prepare": "rollup -c"
+    "prepare": "rollup -c",
+    "pretest": "rollup -c",
+    "semantic-release": "semantic-release",
+    "test": "mocha tests/*-test.js"
   },
   "dependencies": {
     "kronos-interceptor": "^2.6.0",
@@ -39,14 +39,14 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "clone-deep": "4.0.1",
-    "kronos-test-interceptor": "3.1.1",
-    "mocha": "^5.2.0",
-    "semantic-release": "^15.13.2",
-    "underscore": "1.9.1",
     "jsdoc-to-markdown": "^4.0.1",
+    "kronos-test-interceptor": "3.1.1",
     "markdown-doctest": "^0.9.1",
-    "rollup": "^1.0.0",
-    "nyc": "^13.1.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "rollup": "^1.0.2",
+    "semantic-release": "^15.13.2",
+    "underscore": "1.9.1"
   },
   "engines": {
     "node": ">=10.10"
