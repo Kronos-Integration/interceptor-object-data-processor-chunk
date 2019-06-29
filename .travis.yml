@@ -1,24 +1,27 @@
 language: node_js
 node_js:
   - 10.16.0
-branches:
-  only:
-    - master
-    - /^greenkeeper/.*$/
+  - 12.5.0
 cache: npm
-notifications:
-  email:
-    - markus.felten@gmx.de
-before_install:
-  - npm i -g npm@latest
-before_script:
-  - npm prune
-  - npm install -g --production coveralls codecov
+
 script:
   - npm run cover
-after_script:
-  - codecov
-  - cat ./build/coverage/lcov.info | coveralls
-  - npm run docs
-after_success:
-  - npm run semantic-release
+  - npx codecov
+  - cat ./build/coverage/lcov.info | npx coveralls
+
+jobs:
+  include:
+    - stage: doc
+      node_js: lts/*
+      skip_cleanup: 'true'
+      script:
+        - npm run lint
+        - npm run docs
+    - stage: release
+      node_js: lts/*
+      script: skip
+      deploy:
+        provider: script
+        skip_cleanup: 'true'
+        script:
+          - npx semantic-release
