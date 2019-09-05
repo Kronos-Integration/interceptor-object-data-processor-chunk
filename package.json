@@ -45,11 +45,11 @@
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "rollup": "^1.20.3",
-    "semantic-release": "^15.13.23",
+    "semantic-release": "^15.13.24",
     "underscore": "1.9.1"
   },
   "engines": {
-    "node": ">=10.16.1"
+    "node": ">=12.10.0"
   },
   "repository": {
     "type": "git",
