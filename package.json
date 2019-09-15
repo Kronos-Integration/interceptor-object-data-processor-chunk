@@ -44,7 +44,7 @@
     "markdown-doctest": "^0.9.1",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
-    "rollup": "^1.20.3",
+    "rollup": "^1.21.2",
     "semantic-release": "^15.13.24",
     "underscore": "1.9.1"
   },
