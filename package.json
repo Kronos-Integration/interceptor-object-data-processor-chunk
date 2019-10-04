@@ -28,7 +28,6 @@
     "precover": "rollup -c",
     "prepare": "rollup -c",
     "pretest": "rollup -c",
-    "semantic-release": "semantic-release",
     "test": "mocha tests/*-test.js"
   },
   "dependencies": {
@@ -44,8 +43,8 @@
     "markdown-doctest": "^0.9.1",
     "mocha": "^6.2.1",
     "nyc": "^14.1.1",
-    "rollup": "^1.22.0",
-    "semantic-release": "^15.13.24",
+    "rollup": "^1.23.0",
+    "semantic-release": "^15.13.25",
     "underscore": "1.9.1"
   },
   "engines": {
