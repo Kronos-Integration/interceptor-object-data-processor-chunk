@@ -38,7 +38,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "clone-deep": "4.0.1",
-    "jsdoc-to-markdown": "^5.0.1",
+    "jsdoc-to-markdown": "^5.0.2",
     "kronos-test-interceptor": "3.1.1",
     "markdown-doctest": "^0.9.1",
     "mocha": "^6.2.1",
