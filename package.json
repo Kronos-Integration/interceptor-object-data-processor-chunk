@@ -44,7 +44,7 @@
     "mocha": "^6.2.1",
     "nyc": "^14.1.1",
     "rollup": "^1.25.0",
-    "semantic-release": "^15.13.26",
+    "semantic-release": "^15.13.27",
     "underscore": "1.9.1"
   },
   "engines": {
