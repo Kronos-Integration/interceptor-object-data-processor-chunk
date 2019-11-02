@@ -43,8 +43,8 @@
     "markdown-doctest": "^1.0.0",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "rollup": "^1.25.2",
-    "semantic-release": "^15.13.27",
+    "rollup": "^1.26.0",
+    "semantic-release": "^15.13.28",
     "underscore": "1.9.1"
   },
   "engines": {
