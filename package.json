@@ -45,7 +45,7 @@
     "nyc": "^15.0.0",
     "rollup": "^1.27.14",
     "semantic-release": "^15.14.0",
-    "underscore": "1.9.1"
+    "underscore": "1.9.2"
   },
   "engines": {
     "node": ">=12.14.0"
