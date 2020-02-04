@@ -24,7 +24,6 @@
   "scripts": {
     "cover": "nyc --temp-directory build/nyc npm test",
     "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
-    "posttest": "markdown-doctest",
     "precover": "rollup -c",
     "prepare": "rollup -c",
     "pretest": "rollup -c",
