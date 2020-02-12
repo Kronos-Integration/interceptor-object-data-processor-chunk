@@ -8,6 +8,7 @@
     "stream",
     "line",
     "parser",
+    "npm-package-template",
     "kronos-interceptor"
   ],
   "contributors": [
@@ -27,7 +28,8 @@
     "precover": "rollup -c",
     "prepare": "rollup -c",
     "pretest": "rollup -c",
-    "test": "mocha tests/*-test.js"
+    "test": "mocha tests/*-test.js",
+    "posttest": "markdown-doctest"
   },
   "dependencies": {
     "kronos-interceptor": "^2.6.0",
