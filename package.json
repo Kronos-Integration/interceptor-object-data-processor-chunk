@@ -1,7 +1,13 @@
 {
   "name": "@kronos-integration/interceptor-object-data-processor-chunk",
   "version": "0.0.0-semantic-release",
+  "sideEffects": false,
+  "type": "module",
   "main": "./src/module.mjs",
+  "exports": {
+    ".": "./src/module.mjs",
+    "./": "./"
+  },
   "description": "Splits a line by a sparator into tokens.",
   "keywords": [
     "stream",
@@ -21,6 +27,10 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
+    "test": "ava --timeout 2m",
+    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
+    "docs": "documentation readme ./src/module.mjs --section=API",
+    "lint": "documentation lint ./src/module.mjs"
   },
   "dependencies": {
     "@kronos-integration/interceptor": "^2.6.0",
@@ -28,22 +38,28 @@
     "z-schema": "3.26.0"
   },
   "devDependencies": {
+    "ava": "^3.8.2",
+    "c8": "^7.1.2",
     "clone-deep": "4.0.1",
+    "documentation": "^13.0.0",
+    "semantic-release": "^17.0.7",
     "underscore": "1.9.2"
   },
   "engines": {
-    "node": ">=12.16.1"
+    "node": ">=14.3.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk.git"
+    "url": "https://github.com/Kronos-Integration/interceptor-object-data-processor-chunk.git"
   },
   "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk/issues"
+    "url": "https://github.com/Kronos-Integration/interceptor-object-data-processor-chunk/issues"
   },
-  "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk#readme",
+  "homepage": "https://github.com/Kronos-Integration/interceptor-object-data-processor-chunk#readme",
   "template": {
-    "repository": {
-    }
+    "inheritFrom": [
+      "arlac77/template-github-action",
+      "arlac77/template-kronos-module"
+    ]
   }
 }
