@@ -1,5 +1,3 @@
-/* jslint node: true, esnext: true */
-'use strict';
 
 /**
  * This module will turn an array of tokens into an object.
