@@ -14,7 +14,7 @@ kronos-interceptor-object-data-processor-chunk
 =====
 Splits a line by a sparator into tokens
 
-# API Reference
+# API
 
 * <a name="createFunctions"></a>
 
