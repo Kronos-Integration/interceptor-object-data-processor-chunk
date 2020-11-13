@@ -1,4 +1,4 @@
-import { Interceptor } from "kronos-interceptor";
+import { Interceptor } from "@kronos-integration/interceptor";
 
 import { DataProcessorChunkFactory } from "./data-processor-chunk.mjs";
 
