@@ -1,6 +1,9 @@
 {
   "name": "@kronos-integration/interceptor-object-data-processor-chunk",
   "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "type": "module",
   "main": "./src/module.mjs",
@@ -10,10 +13,10 @@
   },
   "description": "Splits a line by a sparator into tokens.",
   "keywords": [
-    "stream",
+    "kronos-interceptor",
     "line",
     "parser",
-    "kronos-interceptor"
+    "stream"
   ],
   "contributors": [
     {
@@ -27,10 +30,12 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "test": "ava --timeout 2m",
-    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
+    "test": "ava --timeout 2m && npm run test:ava",
+    "test:ava": "ava --timeout 2m tests/*.mjs",
+    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m tests/*.mjs && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "docs": "documentation readme ./src/module.mjs --section=API",
-    "lint": "documentation lint ./src/module.mjs"
+    "lint": "documentation lint ./src/module.mjs && npm run lint:docs",
+    "lint:docs": "documentation lint ./src/module.mjs"
   },
   "dependencies": {
     "@kronos-integration/interceptor": "^10.2.0",
@@ -38,15 +43,15 @@
     "z-schema": "5.0.0"
   },
   "devDependencies": {
-    "ava": "^3.8.2",
-    "c8": "^7.1.2",
+    "ava": "^3.13.0",
+    "c8": "^7.3.5",
     "clone-deep": "4.0.1",
-    "documentation": "^13.0.0",
-    "semantic-release": "^17.0.8",
+    "documentation": "github:arlac77/documentation",
+    "semantic-release": "^17.3.0",
     "underscore": "1.12.0"
   },
   "engines": {
-    "node": ">=14.3.0"
+    "node": ">=14.15.1"
   },
   "repository": {
     "type": "git",
@@ -58,7 +63,7 @@
   "homepage": "https://github.com/Kronos-Integration/interceptor-object-data-processor-chunk#readme",
   "template": {
     "inheritFrom": [
-      "arlac77/template-github-action",
+      "arlac77/template-arlac77-github",
       "arlac77/template-kronos-component"
     ]
   }
