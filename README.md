@@ -2,13 +2,8 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![minified size](https://badgen.net/bundlephobia/min/@kronos-integration/interceptor-object-data-processor-chunk)](https://bundlephobia.com/result?p=@kronos-integration/interceptor-object-data-processor-chunk)
 [![downloads](http://img.shields.io/npm/dm/@kronos-integration/interceptor-object-data-processor-chunk.svg?style=flat-square)](https://npmjs.org/package/@kronos-integration/interceptor-object-data-processor-chunk)
-[![Build Action Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FKronos-Integration%2Finterceptor-object-data-processor-chunk%2Fbadge&style=flat)](https://actions-badge.atrox.dev/Kronos-Integration/interceptor-object-data-processor-chunk/goto)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/Kronos-Integration/interceptor-object-data-processor-chunk.git)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/interceptor-object-data-processor-chunk/badge.svg)](https://snyk.io/test/github/Kronos-Integration/interceptor-object-data-processor-chunk)
-[![codecov.io](http://codecov.io/github/Kronos-Integration/interceptor-object-data-processor-chunk/coverage.svg?branch=master)](http://codecov.io/github/Kronos-Integration/interceptor-object-data-processor-chunk?branch=master)
-[![Coverage Status](https://coveralls.io/repos/Kronos-Integration/interceptor-object-data-processor-chunk/badge.svg)](https://coveralls.io/r/Kronos-Integration/interceptor-object-data-processor-chunk)
 
 # kronos-interceptor-object-data-processor-chunk
 
