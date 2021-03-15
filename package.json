@@ -46,7 +46,7 @@
     "ava": "^3.13.0",
     "c8": "^7.3.5",
     "clone-deep": "4.0.1",
-    "documentation": "github:arlac77/documentation",
+    "documentation": "^13.2.0",
     "semantic-release": "^17.3.0",
     "underscore": "1.12.0"
   },
