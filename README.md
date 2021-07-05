@@ -15,27 +15,27 @@ Splits a line by a sparator into tokens
 
 ### Table of Contents
 
--   [ChunkProcessorInterceptor](#chunkprocessorinterceptor)
-    -   [Parameters](#parameters)
--   [stream](#stream)
--   [constructor](#constructor)
-    -   [Parameters](#parameters-1)
--   [addRowActions](#addrowactions)
-    -   [Parameters](#parameters-2)
--   [\_transform](#_transform)
-    -   [Parameters](#parameters-3)
--   [\_flush](#_flush)
-    -   [Parameters](#parameters-4)
--   [addError](#adderror)
-    -   [Parameters](#parameters-5)
--   [createTmpHashAction](#createtmphashaction)
-    -   [Parameters](#parameters-6)
--   [createFunctions](#createfunctions)
-    -   [Parameters](#parameters-7)
--   [createHashFunction](#createhashfunction)
-    -   [Parameters](#parameters-8)
--   [record](#record)
-    -   [Parameters](#parameters-9)
+*   [ChunkProcessorInterceptor](#chunkprocessorinterceptor)
+    *   [Parameters](#parameters)
+*   [stream](#stream)
+*   [constructor](#constructor)
+    *   [Parameters](#parameters-1)
+*   [addRowActions](#addrowactions)
+    *   [Parameters](#parameters-2)
+*   [\_transform](#\_transform)
+    *   [Parameters](#parameters-3)
+*   [\_flush](#\_flush)
+    *   [Parameters](#parameters-4)
+*   [addError](#adderror)
+    *   [Parameters](#parameters-5)
+*   [createTmpHashAction](#createtmphashaction)
+    *   [Parameters](#parameters-6)
+*   [createFunctions](#createfunctions)
+    *   [Parameters](#parameters-7)
+*   [createHashFunction](#createhashfunction)
+    *   [Parameters](#parameters-8)
+*   [record](#record)
+    *   [Parameters](#parameters-9)
 
 ## ChunkProcessorInterceptor
 
@@ -46,8 +46,8 @@ It will add the hops and copies the messages
 
 ### Parameters
 
--   `config`  
--   `endpoint`  
+*   `config`  
+*   `endpoint`  
 
 ## stream
 
@@ -57,8 +57,8 @@ This module will turn an array of tokens into an object.
 
 ### Parameters
 
--   `opts`  
--   `validate`  
+*   `opts`  
+*   `validate`  
 
 ## addRowActions
 
@@ -67,7 +67,7 @@ These actions will be executed per row
 
 ### Parameters
 
--   `actions`  
+*   `actions`  
 
 ## \_transform
 
@@ -75,9 +75,9 @@ Reads the stream data and split it into lines.
 
 ### Parameters
 
--   `data`  
--   `enc`  
--   `cb`  
+*   `data`  
+*   `enc`  
+*   `cb`  
 
 ## \_flush
 
@@ -86,7 +86,7 @@ Only needed if there are multi row fields used
 
 ### Parameters
 
--   `cb`  
+*   `cb`  
 
 ## addError
 
@@ -94,8 +94,8 @@ Adds an error to the stream data
 
 ### Parameters
 
--   `data`  The current stream data
--   `error`  The error to be added.
+*   `data`  The current stream data
+*   `error`  The error to be added.
 
 ## createTmpHashAction
 
@@ -103,8 +103,8 @@ Creates a hash function to compute a content hash without the multirow fields
 
 ### Parameters
 
--   `contentHashFields`  
--   `multiRowFields`  
+*   `contentHashFields`  
+*   `multiRowFields`  
 
 ## createFunctions
 
@@ -112,7 +112,7 @@ Creates the checks for checking boolean values
 
 ### Parameters
 
--   `chunkDefinition`  The chunk definition for these records.
+*   `chunkDefinition`  The chunk definition for these records.
 
 ## createHashFunction
 
@@ -120,8 +120,8 @@ Creates a function which generates a hash from the given content and stores the 
 
 ### Parameters
 
--   `hashFields`  All the field names used to create the hash
--   `hashName`  The name to be used to store the hash value back in the record
+*   `hashFields`  All the field names used to create the hash
+*   `hashName`  The name to be used to store the hash value back in the record
 
 ## record
 
@@ -129,7 +129,7 @@ The function gerates the hash for the given record
 
 ### Parameters
 
--   `record`  The record to create the hash for
+*   `record`  The record to create the hash for
 
 # install
 
