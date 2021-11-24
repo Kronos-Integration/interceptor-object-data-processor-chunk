@@ -47,7 +47,7 @@
     "c8": "^7.10.0",
     "clone-deep": "4.0.1",
     "documentation": "^13.2.0",
-    "semantic-release": "^18.0.0",
+    "semantic-release": "^18.0.1",
     "underscore": "1.13.1"
   },
   "engines": {
