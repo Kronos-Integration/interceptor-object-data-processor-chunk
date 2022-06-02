@@ -48,7 +48,7 @@
     "clone-deep": "4.0.1",
     "documentation": "^13.2.0",
     "semantic-release": "^19.0.2",
-    "underscore": "1.13.3"
+    "underscore": "1.13.4"
   },
   "engines": {
     "node": ">=16.15.0"
