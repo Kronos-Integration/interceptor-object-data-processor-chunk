@@ -22,9 +22,9 @@ Splits a line by a sparator into tokens
     *   [Parameters](#parameters-1)
 *   [addRowActions](#addrowactions)
     *   [Parameters](#parameters-2)
-*   [\_transform](#\_transform)
+*   [\_transform](#_transform)
     *   [Parameters](#parameters-3)
-*   [\_flush](#\_flush)
+*   [\_flush](#_flush)
     *   [Parameters](#parameters-4)
 *   [addError](#adderror)
     *   [Parameters](#parameters-5)
@@ -46,8 +46,8 @@ It will add the hops and copies the messages
 
 ### Parameters
 
-*   `config`  
-*   `endpoint`  
+*   `config` &#x20;
+*   `endpoint` &#x20;
 
 ## stream
 
@@ -57,8 +57,8 @@ This module will turn an array of tokens into an object.
 
 ### Parameters
 
-*   `opts`  
-*   `validate`  
+*   `opts` &#x20;
+*   `validate` &#x20;
 
 ## addRowActions
 
@@ -67,7 +67,7 @@ These actions will be executed per row
 
 ### Parameters
 
-*   `actions`  
+*   `actions` &#x20;
 
 ## \_transform
 
@@ -75,9 +75,9 @@ Reads the stream data and split it into lines.
 
 ### Parameters
 
-*   `data`  
-*   `enc`  
-*   `cb`  
+*   `data` &#x20;
+*   `enc` &#x20;
+*   `cb` &#x20;
 
 ## \_flush
 
@@ -86,7 +86,7 @@ Only needed if there are multi row fields used
 
 ### Parameters
 
-*   `cb`  
+*   `cb` &#x20;
 
 ## addError
 
@@ -103,8 +103,8 @@ Creates a hash function to compute a content hash without the multirow fields
 
 ### Parameters
 
-*   `contentHashFields`  
-*   `multiRowFields`  
+*   `contentHashFields` &#x20;
+*   `multiRowFields` &#x20;
 
 ## createFunctions
 
